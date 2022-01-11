@@ -1,0 +1,46 @@
+<div th:fragment="header" xmlns:sec="http://www.w3.org/1999/xhtml">
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
+                <li><a href="/games" class="nav-link px-2 link-dark">Games</a></li>
+                <li><a href="/pricing" class="nav-link px-2 link-dark">Pricing</a></li>
+                <li><a href="/playstation" class="nav-link px-2 link-dark">Buy</a></li>
+            </ul>
+
+            <div>
+                <div class="col-md-3 text-end" style="display: inline">
+                    <div th:if="${#httpServletRequest.remoteUser}">
+                        <form th:action="@{/logout}" method="post" style="display: inline">
+                            <input type="submit" class="btn btn-primary" value="Sign Out"/>
+                        </form>
+                        <form action="/cart" method="get" style="display: inline">
+                            <input type="submit" class="btn btn-primary" value="Cart"/>
+                        </form>
+
+                        <sec:authorize access="hasAuthority('ADMIN')">
+                            asdasdasssssssssssssssssssssssssssssssssssss
+<!--                            <form action="/" method="get" style="display: inline">-->
+<!--                                <input type="submit" class="btn btn-primary" value="Orders"/>-->
+<!--                            </form>-->
+                        </sec:authorize>
+
+
+                    </div>
+                    <div th:unless="${#httpServletRequest.remoteUser}">
+                        <form action="#" th:action="@{/login}" method="get" class="auth-form" style="display: inline">
+                            <button type="submit" class="btn btn-outline-primary me-2">Login</button>
+                        </form>
+                        <form action="#" th:action="@{/registration}" method="get" class="auth-form" style="display: inline">
+                            <button type="submit" class="btn btn-primary">Registration</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+</div>

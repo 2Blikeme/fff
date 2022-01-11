@@ -1,0 +1,16 @@
+.col-md-3{
+  display: inline;
+}
+
+.card{
+  height: 330px;
+  width: 330px;
+  float:left;
+  text-align:center;
+  margin-left: 75px;
+}
+
+.container-prod-1{
+  display: flex;
+  align-items: stretch;
+}

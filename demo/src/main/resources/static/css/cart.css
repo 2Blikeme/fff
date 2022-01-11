@@ -1,0 +1,19 @@
+.confirm{
+    float: right;
+}
+
+.col-md-3{
+    display: inline;
+}
+
+.card{
+    min-height:250px;
+    float:left;
+    margin: 0 0 15px 100px;
+    text-align:center;
+    padding: 10px;
+}
+
+.confirm{
+    margin-top: 500px;
+}

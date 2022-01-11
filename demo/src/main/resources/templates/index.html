@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Gestalt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Main page</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+
+<div th:insert="blocks/header :: header"></div>
+
+<div class="container">
+    <div class="feature-list">
+        <div class="ps-image">
+            <img src="/static/img/playstation5-main.jpg" width="600" height="500" alt="playstation5">
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item active" style="text-align: center; font-size: larger;">Play has no limits</li>
+
+            <li class="list-group-item">
+                The DualSence weriless controller. <br>
+                <small>See vibrant colours.</small>
+
+            </li>
+
+            <li class="list-group-item">
+                Adaptive Triggers. <br>
+                <small>Dynamic resistance mimics the tension of interactions with in‑game gear and objects in select PS5™ games.</small>
+
+            </li>
+
+            <li class="list-group-item">
+                Experience crisp 4K graphics. <br>
+                <small>Intricate details come to life with your 4K TV and compatible PS5 games.</small>
+            </li>
+
+            <li class="list-group-item">
+                Expand your library with the PlayStation® Plus collection.<br>
+                <small>Enjoy a selection of generation-defining PS4 games, included with your PlayStation Plus membership at no extra cost.</small>
+            </li>
+        </ul>
+    </div>
+</div>
+<div>
+    <p>Pre-order games</p>
+    <a href="/games/demon-souls"><img class="games-logo" src="/static/img/demon_souls_logo.webp" alt="demon_souls_logo"></a>
+    <a href="/games/bloodborne"><img class="games-logo" src="/static/img/bloodborne_logo.webp" alt="demon_souls_logo"></a>
+    <a href="/games/elden-ring"><img class="games-logo" src="/static/img/elden_ring_logo.webp" alt="demon_souls_logo"></a>
+</div>
+
+</body>
+</html>

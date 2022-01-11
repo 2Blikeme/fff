@@ -1,0 +1,30 @@
+*{
+    background-color: #f2f2f2;
+}
+
+
+.input_form{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-top: -120.8px;
+    margin-right: -140px;
+}
+
+
+.playstation{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.btn{
+    margin-top: 10px;
+}
+
+
+.form-control{
+    margin-top: 5px;
+    margin-bottom: 3px;
+    width: 250px;
+}
